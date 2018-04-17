@@ -1,0 +1,28 @@
+{
+  "name": "siufinal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": " nodemon server/app.js"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "compression": "^1.7.2",
+    "express": "^4.16.3",
+    "express-promise-router": "^3.0.2",
+    "helmet": "^3.12.0",
+    "joi": "^13.1.2",
+    "jsonwebtoken": "^8.2.1",
+    "mongoose": "^5.0.14",
+    "mongoose-unique-validator": "^2.0.0",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.3",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "validator": "^9.4.1"
+  }
+}
