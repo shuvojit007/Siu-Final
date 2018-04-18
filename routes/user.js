@@ -14,4 +14,11 @@ router.route('/signin')
         UserController.SignIn
     );
 
+    
+router.route('/user')
+.get(passportSignJWT, UserController.User)
+.put(validateBody(schemas.updateUserPicSchema),
+    passportSignJWT,
+    UserController.UpdatePro);
+
 module.exports = router;
