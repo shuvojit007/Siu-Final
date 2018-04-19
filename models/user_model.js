@@ -28,6 +28,14 @@ const UserSchema = new Schema({
             message: '{VALUE} is not a valid Email!'
         }
     },
+    blog: [{
+        type: Schema.Types.ObjectId,
+        ref: 'blog'
+    }],
+    comments: [{
+        type: Schema.Types.ObjectId,
+        ref: 'comments'
+    }],
     password: {
         type: String,
         required: [true, 'password is required'],

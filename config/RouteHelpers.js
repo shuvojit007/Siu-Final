@@ -53,9 +53,19 @@ module.exports = {
         }),
         blogSchema: Joi.object().keys({
             title: Joi.string().required(),
-            description: Joi.string().required(),
-            image: [Joi.string()]
-
+            description: Joi.string().required()
+        }),   
+        commentsSchema: Joi.object().keys({
+            comment: Joi.string().required()
+        }),
+         updateSchema: Joi.object().keys({
+            title: Joi.string(),
+            description: Joi.string(),
+            user: Joi.string().regex(/^[0-9a-fA-F]{24}$/),
+    
+        }),
+        idSchema: Joi.object().keys({
+            param: Joi.string().regex(/^[0-9a-fA-F]{24}$/).required()
         }),
     }
 }
