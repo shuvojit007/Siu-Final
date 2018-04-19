@@ -50,6 +50,12 @@ module.exports = {
             lastName: Joi.string().required(),
             phnNumber: Joi.string().required(),
             accountType: Joi.string().required(),
-        })
+        }),
+        blogSchema: Joi.object().keys({
+            title: Joi.string().required(),
+            description: Joi.string().required(),
+            image: [Joi.string()]
+
+        }),
     }
 }
