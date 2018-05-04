@@ -72,14 +72,38 @@ const UserSchema = new Schema({
         }
     },
     alumni:{
-        designation:String,
-        batch:String,
-        current_status:String,
-        passing_year :Number
+        designation:{
+            type :String,
+            default:null,
+            require : true,
+        },
+        batch:{
+            type :String,
+            default:null,
+            require : true,
+        },
+        current_status:{
+            type:String,
+            default:null,
+            require : true,
+        },
+        passing_year :{
+            type:Number,
+            default:null,
+            require : true,
+        }
     },
     teacher:{
-        designation:String,
-        education:String 
+        designation:{
+            type :String,
+            default:null,
+            require : true,
+        },
+        education:{
+            type :String,
+            default:null,
+            require : true,
+        }
     }
 }, {
     timestamps: true

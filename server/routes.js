@@ -4,6 +4,6 @@ const cmntRoutes = require('../routes/comments');
 module.exports= (app) => {
     app.use('/siu', userRoutes);
     app.use('/siu/blog', blogRoutes);
-    app.use('/siu/cmnt', cmntRoutes);
+    app.use('/cmnt', cmntRoutes);
 
 }

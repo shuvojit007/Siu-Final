@@ -5,6 +5,12 @@ const passport = require('passport');
 const passportSignIn = passport.authenticate('local', { session: false });
 const passportSignJWT = passport.authenticate('jwt', { session: false });
 
+
+router.get('/ss',(req,res)=>{
+    res.send("sdsd");
+})
+
+
 router.route('/')
     //get all post
     .get(BlogControllers.GetAllBlog)

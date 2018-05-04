@@ -4,6 +4,11 @@ const { validateParam, validateBody, schemas } = require('../config/RouteHelpers
 const passport = require('passport');
 const passportSignJWT = passport.authenticate('jwt', { session: false });
 
+
+router.get('/ss',(req,res)=>{
+    res.send("sdsd");
+})
+console.log("sdsdd")
 router.route('/:blogId')
 
 //get All comments
