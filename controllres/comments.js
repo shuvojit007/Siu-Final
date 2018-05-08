@@ -17,8 +17,6 @@ module.exports = {
 
         blog.comments.push(comment)
         await blog.save();
-        blog.comments.push(comment)
-        await user.save();
 
         res.status(200).json({ sucess: true })
     },
