@@ -11,9 +11,9 @@ const StudentSchema = new Schema( {
         type :String,
         required:true
     },
-    image: [{
+    image: {
             type:String
-    }],  
+    },  
     date: { type: Date, default: Date.now }
 })
 
