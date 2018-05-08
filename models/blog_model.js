@@ -14,7 +14,10 @@ const BlogSchema = new Schema( {
         type: Schema.Types.ObjectId,
         ref: 'user'
     },
-    image:String,  
+    image: {
+        type: String,
+        default: "default"
+    },
     comments: [{
         type: Schema.Types.ObjectId,
         ref: 'comments'

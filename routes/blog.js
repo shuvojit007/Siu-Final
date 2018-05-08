@@ -15,7 +15,7 @@ router.route('/')
     //get all post
     .get(BlogControllers.GetAllBlog)
     //add new Post
-    .post(validateBody(schemas.blogSchema), passportSignJWT, BlogControllers.AddBlog);
+    .post( passportSignJWT, BlogControllers.AddBlog);
 
 router.route('/userblog')
     //get the specific user post
