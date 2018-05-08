@@ -48,7 +48,6 @@ module.exports = {
             password: Joi.string().required(),
             firstName: Joi.string().required(),
             lastName: Joi.string().required(),
-            phnNumber: Joi.string().required(),
             accountType: Joi.string().required(),
         }),
         blogSchema: Joi.object().keys({
